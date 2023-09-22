@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cmapb"
+    tools:context=".CategoryFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/layout_search"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/search_bg"
+
+                >
+
+
+                <ImageView
+                    android:id="@+id/srach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/path"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/search_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/srach"
+                    android:background="@null"
+                    android:fontFamily="@font/gothamroundedbook"
+                    android:hint="Search"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_bar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@id/layout_search"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/capsules"
+
+                        >
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Gym"
+                            android:textColor="#fff"
+                            android:textSize="10sp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/capsule">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="School"
+                            android:textColor="#000"
+                            android:textSize="10sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/capsule">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Market"
+                            android:textColor="#000"
+                            android:textSize="10sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/capsule">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Hotel"
+                            android:textColor="#000"
+                            android:textSize="10sp" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/layout_bar"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

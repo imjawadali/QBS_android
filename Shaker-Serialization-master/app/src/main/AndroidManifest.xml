@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/mainlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mainlogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShakerApplication"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Screens.Scan_Barcode_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.ShowObdNumbers"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.Select_Type_Of_Transfer_Posting"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.POSTAUDITSCREEN"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.BarcodeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.SelectDestinationScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.FloorScanSerialnumber"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.TransferBarcodeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.TransferLocationScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.DeliveryScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.GoodsIssueScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Screens.LoadInventory"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Screens.FloorAuditScreen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Screens.ScanTransferScreen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Screens.SelectOutboundDeliveryScreen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Screens.GoodsReceiptScreen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Screens.ScanSerialNumberScreen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Screens.ScanProductScreen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Screens.SelectInboundDelivery"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Screens.SerialCheckScreen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Screens.DashboardScreen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Screens.LoginScreen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Screens.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,356 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.logincontainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-image: url(./Images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* justify-content: center; */
+    background-color: teal;
+}
+.logindiv{
+    height: 55vh;
+    width: 40vw;
+    margin-top: 20px;
+    /* max-width: 30%;
+    max-height: 60%; */
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.parentheading{
+    font-weight: bold;
+    color: #EE0324;
+    font-family: 'poppins';
+    word-spacing: 3px;
+    font-size: 25px;
+}
+#email{
+    width: 25vw;
+     height: 6vh;
+     margin-top: 30px;
+     padding-left: 30px;
+     border: none;
+     font-family: 'poppins';
+     border-radius: 15px;
+     box-shadow: 1px 1px 10px 1px #bdb9b9;
+     border: 10px;
+     font-size: 18px;
+}
+#email:hover{
+    box-shadow: 1px 1px 15px 1px #bdb9b9;
+}
+#password{
+    width: 25vw;
+    height: 6vh;
+    font-family: 'poppins';
+    font-size: 19px;
+    padding-left: 30px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 1px #bdb9b9;
+  text-decoration: none;
+    margin-top: 30px;
+    border: none;
+    border: 10px;
+}
+#btn{
+    width: 18vw;
+    height: 5vh;
+    background-color: #EE0324;
+    border: none;
+    font-size: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-family: 'poppins';    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.text1{
+    color: #EE0324;
+    margin-top: 20px;
+    font-family: 'poppins';
+}
+.text3{
+    color: black;
+    margin-left: 5px;
+    font-family: 'poppins';
+}
+#btn:hover{
+    box-shadow: 1px 1px 4px 1px #EE0324;
+}
+.text3{
+    color: #EE0324;
+    font-weight: bold;
+    font-family: 'poppins';
+}
+#emailicon{
+    width: auto;
+    height: 6vh;
+    border-radius: 15px;
+}
+.text3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footerdiv{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    justify-content: center;
+}
+.header{
+    width: 100vw;
+    height: 10vh;
+    margin-top: 60px;
+}
+.iconemail{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    width: 220px;
+    height: 15vh;
+    margin-left: 30px;
+    background-image: url(./Images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:600px) {
+    .header{
+        width: 100vw;
+        height: 14vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .icon{
+        height: 14vh;
+        margin-left: 50px;
+        width: 300px;
+        background-image: url(./Images/logo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .logindiv{
+        height: 60vh;
+        width: 60vw;
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 30px;
+        background-color: #FFFFFF;
+    }
+    #password{
+        width: 45vw;
+        height: 6vh;
+        font-family: 'poppins';
+        font-size: 19px;
+        padding-left: 30px;
+      border-radius: 15px;
+      box-shadow: 1px 1px 10px 1px #bdb9b9;
+        margin-top: 30px;
+        border: none;
+        border: 10px;
+    }
+    #email{
+        width: 45vw;
+        height: 6vh;
+        font-family: 'poppins';
+        font-size: 19px;
+        padding-left: 30px;
+      border-radius: 15px;
+      box-shadow: 1px 1px 10px 1px #bdb9b9;
+        margin-top: 30px;
+        border: none;
+        border: 10px;
+    }
+    #btn{
+        width: 35vw;
+        height: 5vh;
+        background-color: #EE0324;
+        border: none;
+        font-size: 15px;
+        margin-top: 30px;
+        cursor: pointer;
+        font-family: 'poppins';    color: white;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width:500px) {
+    .header{
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .icon{
+        height: 15vh;
+        margin-left: 50px;
+        width: 260px;
+        background-image: url(./Images/logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .logindiv{
+        height: 60vh;
+        width: 80vw;
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 30px;
+        background-color: #FFFFFF;
+    }
+    #password{
+        width: 55vw;
+        height: 6vh;
+        font-family: 'poppins';
+        font-size: 19px;
+        padding-left: 30px;
+      border-radius: 15px;
+      box-shadow: 1px 1px 10px 1px #bdb9b9;
+        margin-top: 30px;
+        border: none;
+        border: 10px;
+    }
+    #email{
+        width: 55vw;
+        height: 6vh;
+        font-family: 'poppins';
+        font-size: 19px;
+        padding-left: 30px;
+      border-radius: 15px;
+      box-shadow: 1px 1px 10px 1px #bdb9b9;
+        margin-top: 30px;
+        border: none;
+        border: 10px;
+    }
+    #btn{
+        width: 43vw;
+        height: 5vh;
+        background-color: #EE0324;
+        border: none;
+        font-size: 15px;
+        margin-top: 30px;
+        cursor: pointer;
+        font-family: 'poppins';    color: white;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+    .footerdiv{
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .parentheading{
+        font-weight: bold;
+        color: #EE0324;
+        font-family: 'poppins';
+        margin-left: 30px;
+        word-spacing: 3px;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:400px) {
+    .header{
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .icon{
+        height: 15vh;
+        margin-left: 50px;
+        width: 260px;
+        background-image: url(./Images/logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .logindiv{
+        height: 60vh;
+        width: 80vw;
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 30px;
+        background-color: #FFFFFF;
+    }
+    #password{
+        width: 55vw;
+        height: 6vh;
+        font-family: 'poppins';
+        font-size: 19px;
+        padding-left: 30px;
+      border-radius: 15px;
+      box-shadow: 1px 1px 10px 1px #bdb9b9;
+        margin-top: 30px;
+        border: none;
+        border: 10px;
+    }
+    #email{
+        width: 55vw;
+        height: 6vh;
+        font-family: 'poppins';
+        font-size: 19px;
+        padding-left: 30px;
+      border-radius: 15px;
+      box-shadow: 1px 1px 10px 1px #bdb9b9;
+        margin-top: 30px;
+        border: none;
+        border: 10px;
+    }
+    #btn{
+        width: 43vw;
+        height: 5vh;
+        background-color: #EE0324;
+        border: none;
+        font-size: 15px;
+        margin-top: 30px;
+        cursor: pointer;
+        font-family: 'poppins';    color: white;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+    .footerdiv{
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .parentheading{
+        font-weight: bold;
+        color: #EE0324;
+        font-family: 'poppins';
+        margin-left: 30px;
+        word-spacing: 3px;
+        font-size: 25px;
+    }
+}
+

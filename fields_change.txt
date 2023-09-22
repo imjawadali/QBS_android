@@ -1,0 +1,26 @@
+password
+erp id
+erp password 
+email
+country code
+cell no
+default warehouse
+user group
+locked
+super user
+receiver
+allow all whs
+
+
+
+
+
+
+
+
+
+fields change
+
+item master data
+item in watehouse
+item barcode

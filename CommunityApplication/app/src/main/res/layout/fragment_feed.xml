@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/cmapb"
+    tools:context=".FeedFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+
+            <RelativeLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="32dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="1dp"
+                    android:src="@drawable/imagespngmen"
+                    app:civ_border_color="@color/colorPrimary"
+                    app:civ_border_width="1dp" />
+
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/profile_image"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Anas Ahmed"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/text_follower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_name"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/profile_image"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="1000"
+                    android:textColor="#000"
+                    android:textSize="10sp" />
+
+
+                <TextView
+                    android:id="@+id/text_followerss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_name"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/text_follower"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Followers"
+                    android:textColor="#000"
+                    android:textSize="10sp" />
+
+
+                <TextView
+                    android:id="@+id/text_following_counr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_name"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/text_followerss"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="120"
+                    android:textColor="#000"
+                    android:textSize="10sp" />
+
+
+                <TextView
+                    android:id="@+id/text_following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_name"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/text_following_counr"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="following"
+                    android:textColor="#000"
+                    android:textSize="10sp" />
+
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/icon_feather_bell"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/top"
+                android:background="@drawable/add_indepndet">
+
+
+                <TextView
+                    android:id="@+id/community_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Community News"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/community_text"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+                <TextView
+                    android:id="@+id/text_gate_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recyclerview"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Gate Updates"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+
+
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerviewgate"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_below="@id/text_gate_update"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp">
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+                <TextView
+                    android:id="@+id/text_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recyclerviewgate"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Service"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+
+
+                    />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclervieservice"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_below="@id/text_service"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp">
+
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="./assets/cognitive.css">
+    <link rel="icon" href="./assets/img/nom-icon.png" type="image/png">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/5942064cc7.js" crossorigin="anonymous"></script>
+
+
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
+
+    <title>NOMAD</title>
+</head>
+
+
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+
+
+                <span class="image" id="smlogo">
+                    <img src="./assets/img/nom-icon.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <img src="./assets/img/nom1.png" width="170" id="ascend_logo">
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle' onclick="change_logo()"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-briefcase icon'></i>
+                            <span class="text nav-text">My Tasks</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-id-card icon'></i>
+                            <span class="text nav-text">My Profile</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-comment icon'></i>
+                            <span class="text nav-text">FAQs</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="text nav-text">Settings</span>
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li> -->
+
+                </ul>
+            </div>
+             <div class="nav-link">
+                <div class="btcontent">
+                    <div class="maincircle">
+                    <div class="helpiconcircle">
+                        <div class="anothercircle">
+                      <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                        <div class="text1">Need Help with NOMAD?</div>
+                        <button class="btncontent">Go to help center</button>
+                    </div>
+                </div>
+             </div>
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">
+
+
+            <div class="text">
+                <h5>My Tasks</h5>  &nbsp;
+                <span><h6>->Cognitive Benchmarking</h6></span>
+
+            </div>
+
+
+
+
+
+            <!-- ----------------------------------------- MAIN TOP RIGHT WIDGETS CONTAINER START ----------------------------------------- -->
+
+
+
+            <div class="text">
+
+                <div class="searchbarcontainer">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search">
+                </div>
+
+
+                <div class="notification_container">
+                    <img src="./assets/img/bell.svg">
+                </div>
+
+
+                <div class="user_image_container">
+                    <img src="./assets/img/5.png">
+                </div>
+
+
+
+
+                <!-- <div class="user_name_container" style="border-radius: 5%; padding: 10px; display: flex;">
+                
+                
+                <h7 style="font-size: 16px; font-weight: 300;">Shuaib Yasin</h7>
+                <i class='fas fa-angle-down icon' style="font-size: 15px; padding: 5px; color: grey;padding-top: 5px; cursor: pointer;" onclick="menuToggle()"></i>
+             
+             
+                <div class="user_profile_menu">
+                    <div class="diamond"></div>
+                    <ul>
+                      <li>
+                        <i class="bx bx-log-out icon"><a href="/Login">Logout</a></i>
+                      </li>
+                    </ul>
+                </div>
+
+
+            </div> -->
+
+
+
+
+
+
+
+
+                <div class="action">
+                    <h7 class="username">Shuaib Yasin</h7>
+                    <div class="profile">
+                        <i class='fas fa-angle-down' onclick="menuToggle()"></i>
+                    </div>
+                    <div class="menu1">
+                        <h3>CONTROL PANEL</h3>
+                        <!-- <br /><span>Website Designer</span> -->
+                        <hr>
+                        <ul>
+                            <li>
+                                <i class="fa fa-envelope" aria-hidden="true"><a href="/Inbox">&nbsp; Inbox</a></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-question-circle" aria-hidden="true"><a href="/Help"> &nbsp;Help</a></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-user" aria-hidden="true"> <a href="/MyProfile"> &nbsp; My profile</a></i>
+                            </li>
+                            <li>
+                                <i class="bx bx-lock icon" aria-hidden="true"><a href="/ResetPassword">&nbsp;
+                                        Password</a></i>
+                            </li>
+                            <li>
+                                <i class="bx bx-log-out icon"><a href="/Login">&nbsp; Logout</a></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+            <!-- ----------------------------------------- MAIN TOP RIGHT WIDGETS CONTAINER END ----------------------------------------- -->
+            
+            
+        
+        
+        
+        
+        
+        <!-- ----------------------------------------- MAIN BODY START (BETA)----------------------------------------- -->
+
+
+        <div class="container">
+            <div class="container1">
+               <div class="childcontainer">
+                <div class="leftcontent">
+                
+                <div class="left">
+                    <img src="./assets/img/conginative-icon-size-120.png" alt="">
+                </div>
+    
+                <div class="content">
+                    <div class="text1">Cognitive BenchMarking</div>
+                    <div class="text2">Live Date: 30th December 2022</div>
+                    <div class="text3">End Date: 5th January 2023</div>
+                </div>
+            </div>
+                <div class="right">
+                    <div class="rightcontent">
+                        <img src="./assets/img/circle.jpeg" alt="">
+                    </div>
+                </div>
+               </div>
+               <div class="bottomcontent">
+                <p>Welcome to the gamified assessment as part of interloop Ltd. Development Center. it will take approximately 40 minutes for you to complete. you can only start the game once, so please begin when you are able to concentrate on it. if you play on windows, please select chrome to browse. if you play on your ios device, then please use Safari. Do not refresh the page during the assessment.</p>
+               </div>
+               <div class="bottomcontent1">
+                <p>A few guidelines to help you:</p>
+                <ul class="list">
+                <li>The games must be played on a dekstop/laptop.</li>
+                <li>Do a tech run ahead of time and ensure that you have a strong internet connection. Try to minimize other browsing activities for a smooth experience.</li>
+                <li>Make sure to find yourself a quiet space with no distractions.</li>
+                <li>Please read the games instructions carefully before you begin.</li>
+                <li>You can take a quick break between the games but you cannot interrupt the process.</li>
+                <li>At any other instance of time than specified, you will not be able to access the assessment.</li>
+            </ul>
+               </div>
+               <div class="bottomcontent2">
+                <p>Please click on the link below to start the game-based assessment:</p>
+               </div>
+               <div class="button">
+                <button class="btn">Click Here To Complete</button>
+               </div>
+               <div class="footer">
+                <p>For any support, should you have any doubts or questions, please reach out to us via&nbsp; <a href="/HelpCenter"><u>Help center</u> </a> </p>
+               </div>
+            </div>
+            <!-- <div class="footer1">
+                <ul>
+                    <li>2022 Powered By Ascend People Consulting</li>
+                    <li>Terms and Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div> -->
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+                <!-- ----------------------------------------- MAIN BODY END (BETA)----------------------------------------- -->
+                
+                
+                
+                
+                <!-- ----------------------------------------- FOOTER START (BETA)----------------------------------------- -->
+
+
+
+         <div class="footer_container" >       
+                <div class="footer1">
+                    <ul>
+                        <li class="list">&copy;2022 Powered By Ascend People Consulting</li>
+                        <li class="list">Terms & Conditions</li>
+                        <li class="list">Privacy Policy</li>
+                    </ul>
+                </div>
+        
+
+            </div>      
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- --------------------------------------------SCRIPT START FROM HERE-------------------------------------------- -->
+
+
+    <script>
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle"),
+            modeText = body.querySelector(".mode-text");
+
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+    </script>
+
+
+    <script>
+        function change_logo() {
+            small_logo = document.getElementById("smlogo");
+
+            const display = window.getComputedStyle(small_logo).display;
+
+
+            if (display === 'flex') {
+                document.getElementById("smlogo").style.display = "none";
+            }
+            else {
+                console.log("inside none");
+                document.getElementById("smlogo").style.display = "flex";
+
+            }
+
+        }
+    </script>
+
+
+
+
+
+
+    <script>
+
+        function menuToggle() {
+            console.log("I'm in.....!");
+            const toggleMenu = document.querySelector(".menu1");
+            toggleMenu.classList.toggle("active");
+        }
+
+    </script>
+
+
+</body>
+
+</html>

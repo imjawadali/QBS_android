@@ -1,0 +1,129 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	 <!-- <link rel="stylesheet" href="css/futuriste.css"> -->
+   <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+
+  <title>NOMAD</title>
+    <style>
+        *{
+	padding:0px;
+	margin:0px;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+	background:black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+	}
+
+#container{
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: calc(50px);
+}
+.message{
+  font-size: 40px;
+	color:#116DFC;
+}
+.message:after{
+	content:"]";
+}
+.message:before{
+	content:"[";
+}
+
+.message:after, .message:before {
+  
+  color: #116DFC;
+  font-size: 50px;
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+          margin:0 50px;
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes out {
+  0% {r:1;  opacity: 0.9 ;}
+  25%{r:5;  opacity: 0.3 ;}
+  50%{r:10; opacity: 0.2 ;}
+  75%{r:15;opacity:0.1;}
+ 	100% {r:20;opacity:0;}
+}
+.btn{
+  width: 15vw;
+  padding: 10px 20px;
+  background-color: #116DFC;
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .message{
+  font-size: 20px;
+}
+.message:after, .message:before {
+  font-size: 30px;
+  margin:0 20px;
+}
+.btn{
+  width: 35vw;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+
+<div id="container">
+
+<div class="message">
+    Account Activation Successful 
+</div>
+<div style="color: white; font-size: 30px;">
+    click here to login
+</div>
+<div>
+  <a href="/Login">
+    <button class="btn">login</button>
+    </a>
+</div>
+</div>
+</body>
+	</html>

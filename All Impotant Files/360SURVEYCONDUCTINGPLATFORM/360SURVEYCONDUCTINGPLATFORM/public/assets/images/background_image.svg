@@ -1,0 +1,31 @@
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1296px"
+	 height="728px" viewBox="0 0 1296 728" style="overflow:visible;enable-background:new 0 0 1296 728;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:rgba(171, 223, 211,0.3);}
+	.st2{fill: rgba(171, 223, 211,0.3);}
+
+.st1{
+	transform: matrix(0.5, 0, 0, 0.5, 0, 280);
+}
+
+</style>
+<defs>
+</defs>
+<g>
+	<rect class="st0" width="1296" height="728"/>
+</g>
+<g>
+	<!-- <path class="st1" d="M90,333c-8.77,83.69-2.77,187.64,147.01,212C360,565,529,661,539,728H0l0-554C26,187.53,101,228,90,333z"/> -->
+	<path class="st1" d="M90,333c-5.77,43.69-2.77,187.64,147.01,212C360,565,529,661,539,728H0l0-554C26,187.53,101,228,90,323z"/>
+</g>
+
+
+<g>
+	<g>
+		<path class="st2" d="M730.14,161.52C992.14,292.52,1184,47,1296,305V0H582.1C624.41,60.78,663.66,128.28,730.14,161.52z"/>
+	</g>
+</g>
+
+</svg>

@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "1948153e-34fd-4871-b4d6-3f1bcb4b442c",
+		"name": "Z-CONNECT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23713480"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8091/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullname\":\"Saqib\",\r\n    \"gender\":\"Male\",\r\n    \"dateofbirth\":\"24/3/2002\",\r\n    \"emailaddress\":\"saboor.su@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

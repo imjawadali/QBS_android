@@ -1,0 +1,1 @@
+"http://"+${dns}+"/api/Oitms/getsynchdata"

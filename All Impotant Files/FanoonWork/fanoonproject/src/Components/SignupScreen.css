@@ -1,0 +1,18 @@
+.maindiv{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 10vw;
+    background-color: teal;
+    height: auto;
+    border-radius: 20px;
+}
+#name{
+    outline: none;
+    height: 30px;
+    background-color: teal;
+    border-radius: 20px;
+    width: 10vw;
+    border: none;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hexagonal Graph</title>
+  </head>
+  <body>
+    <canvas id="graphCanvas"></canvas>
+
+    <script>
+      // JavaScript code here
+      const canvas = document.getElementById('graphCanvas');
+
+      // Get the canvas element and set its dimensions
+      canvas.width = 400;
+      canvas.height = 400;
+
+      // Get the 2D context of the canvas
+      const ctx = canvas.getContext('2d');
+
+      // Set the line width and stroke style for drawing the hexagon border
+      ctx.lineWidth = 2;
+      ctx.strokeStyle = 'black';
+
+      // Set the fill style for drawing the hexagon graph
+      ctx.fillStyle = 'blue';
+
+      // Calculate the size of each side of the hexagon based on the canvas dimensions
+      const hexSide = Math.min(canvas.width, canvas.height) / 6;
+
+      // Calculate the x and y coordinates of the center of the canvas
+      const centerX = canvas.width / 2;
+      const centerY = canvas.height / 2;
+
+      // Start drawing the hexagon border
+      ctx.beginPath();
+
+      // Move the pen to the first vertex of the hexagon
+      ctx.moveTo(centerX + hexSide, centerY);
+
+      // Loop through the remaining vertices of the hexagon, drawing lines between them
+      for (let i = 1; i <= 6; i++) {
+        const angleRad = ((60 * i) - 30) * Math.PI / 180;
+        const x = centerX + (hexSide * Math.cos(angleRad));
+        const y = centerY + (hexSide * Math.sin(angleRad));
+        ctx.lineTo(x, y);
+      }
+
+      // Finish drawing the hexagon border
+      ctx.closePath();
+      ctx.stroke();
+
+      // Start drawing the hexagon graph
+      ctx.beginPath();
+
+      // Move the pen to the first vertex of the hexagon
+      ctx.moveTo(centerX + hexSide, centerY);
+
+      // Loop through the remaining vertices of the hexagon, drawing lines between them
+      for (let i = 1; i <= 6; i++) {
+        const angleRad = ((60 * i) - 30) * Math.PI / 180;
+        const x = centerX + (hexSide * Math.cos(angleRad));
+        const y = centerY + (hexSide * Math.sin(angleRad));
+        ctx.lineTo(x, y);
+      }
+
+      // Finish drawing the hexagon graph
+      ctx.closePath();
+      ctx.fill();
+    </script>
+  </body>
+</html>

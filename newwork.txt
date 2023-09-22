@@ -1,0 +1,12 @@
+add in line
+separate lin
+not add
+
+
+
+
+why it not picking right barcode when enter first barcode and then click scan button popup show and i click update so the barcode not coming properly why but first time data come accurately please resolve it
+
+
+
+#68A0FD

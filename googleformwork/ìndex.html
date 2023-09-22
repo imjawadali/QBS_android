@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+</head>
+<body>
+   <div class="maincontainer">
+        <div class="div1">
+            <div class="headdiv">
+                <input type="text" placeholder="Question" id="field1">
+                <div class="imagediv">
+                </div>
+                <div class="dropdown">
+                    <select>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="div2">
+                <input type="text" id="text2" placeholder="Option">
+            </div>
+            <div class="ddiv" id="dynamic">
+            </div>
+            <div class="div3" onclick="adddiv()">
+                <input type="radio"><pre> Add option or </pre><span style="color: #4285F4;">add "Other"</span>
+            </div>
+        </div>
+
+   </div>
+</body>
+</html>

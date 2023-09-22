@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="./assets/css/360surveyconductingplatform.css">
+    <link rel="icon" href="./assets/images/nom-icon.png" type="image/png">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/5942064cc7.js" crossorigin="anonymous"></script>
+
+
+
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
+
+    <title>NOMAD</title>
+</head>
+
+
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+
+
+                <span class="image" id="smlogo">
+                    <!-- <img src="images/nom-icon.png" alt=""> -->
+             
+                   <img src="./assets/images/output-onlinegiftools(1).gif" width="80">
+                </span>
+
+                <div class="text logo-text">
+                    <img src="./assets/images/nom1.png" width="170px" id="ascend_logo">
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle' onclick="change_logo()"></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/Dashboard">
+                            <i class='bx bx-briefcase icon'></i>
+                            <span class="text nav-text">My Tasks</span> &nbsp;
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/Inbox">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">
+                                Inbox</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/Resume">
+                            <i class='bx bx-id-card icon'></i>
+                            <span class="text nav-text">My Profile</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/FAQS">
+                            <i class='bx bx-comment icon'></i>
+                            <span class="text nav-text">FAQs</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/Settings">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="text nav-text">Settings</span>
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li> -->
+
+                </ul>
+            </div>
+   <div class="nav-link">
+                <div class="btcontent">
+                    <div class="maincircle">
+                    <div class="helpiconcircle">
+                        <div class="anothercircle">
+                      <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                        <div class="text001">Need Help with NOMAD?</div>
+                        <button class="btncontent">Go to help center</button>
+                    </div>
+                </div>
+             </div>
+            <div class="bottom-content">
+                <!-- <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li> -->
+
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">
+
+
+            <div class="text">
+                <h5>My Tasks </h5>
+            </div>
+
+
+
+            
+            <!-- ----------------------------------------- MAIN TOP RIGHT WIDGETS CONTAINER START ----------------------------------------- -->
+
+
+
+            <div class="text">
+
+                <div class="searchbarcontainer">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search">
+                </div>
+
+
+                <div class="notification_container" onclick="notification_div_hide_and_show()">
+                    <img src="./assets/images/bell.svg">
+                </div>
+
+
+                <div class="user_image_container">
+                    <img src="./assets/images/5.png">
+                </div>
+
+
+                <div class="action">
+                    <h7 class="username"><%= name %></h7>
+                    <div class="profile">
+                        <i class='fas fa-angle-down' onclick="menuToggle()"></i>
+                    </div>
+                    <div class="menu1">
+                        <h3>CONTROL PANEL</h3>
+                        <!-- <br /><span>Website Designer</span> -->
+                        <hr>
+                        <ul>
+                            <li>
+                                <i class="fa fa-envelope" aria-hidden="true"><a href="/Inbox">&nbsp; Inbox</a></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-question-circle" aria-hidden="true"><a href="/Help"> &nbsp;Help</a></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-user" aria-hidden="true"> <a href="/MyProfile"> &nbsp; My profile</a></i>
+                            </li>
+                            <li>
+                                <i class="bx bx-lock icon" aria-hidden="true"><a href="/ResetPassword">&nbsp;
+                                        Password</a></i>
+                            </li>
+                            <li>
+                                <i class="bx bx-log-out icon"><a href="/Login">&nbsp; Logout</a></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+<!-- ----------------------------------------- MAIN TOP RIGHT WIDGETS CONTAINER END ----------------------------------------- -->
+            
+        
+        
+ 
+
+     <div class="main_body_div">
+                <!-- ----------------------------------------- MAIN BODY START (BETA)----------------------------------------- -->
+                <div class="container">
+                    <div class="mainContainer">
+                      <div class="topContainer">
+                        <div class="topContainerimage">
+                          <img src="./assets/images/logo.png" alt="logo" />
+                        </div>
+                        <div class="topContainertext">
+                          <h4 class="text1" style="color: #03a07b">
+                            <b>You are Evaluating</b> <%= evluateename %>
+                          </h4>
+                          <p class="text2"><b>Live Date : 30th December 2022</b></p>
+                          <p class="text3"><b>End Date : 5th January 2023</b></p>
+                        </div>
+                      </div>
+                      <div class="progress_bar_div">
+                        <div style="margin-bottom: 10px; color: gray;"> Completion Status </div>
+                        <div class="mainprogressbar">
+                          <div id="progressbar1" class="progress">
+                            <p style="color: white; font-size: 12px;">0%</p>
+                            <p style="color: white; font-size: 12px;">100%</p>
+                          </div>
+                        </div>
+                        <div id="pagination1" class="pagination">
+                          <!-- ==========================================================QUESTIONS TO BE ADDED HERE========================================================== -->
+            
+                          <!-- ==========================================================QUESTIONS TO BE ENDED ABOVE========================================================== -->
+                        </div>
+            
+            
+                        <!-- ===================================================NEXT AND PREV BUTTON=================================================== -->
+            
+            
+            
+                        <div class="main_btn">
+                          <div class="btn1">
+                            <button
+                              class="btn"
+                              style="background: #980f0f"
+                              id="prev1"
+                              onclick="prev_qn()"
+                            >
+                              Previous
+                            </button>
+                            <button
+                              class="btn primary"
+                              id="next1"
+                              onclick="change_question()"
+                            >
+                              Next
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- ----------------------------------------- MAIN BODY END (BETA)----------------------------------------- -->
+    
+
+     </div>
+
+
+<!-- ============================------------------------INSIGHTS CONTAINER END------------------------============================ -->
+
+
+
+
+
+
+        <!-- ----------------------------------------- MAIN BODY END (BETA)----------------------------------------- -->
+                
+                
+                
+                
+        <!-- ----------------------------------------- FOOTER START (BETA)----------------------------------------- -->
+
+
+
+        <div class="footer">
+            <div>
+                <h6>©Powered By Ascend People Consulting</h6>
+                <h6><a href="#" style="color: black;">Terms & Conditions</a></h6>
+                <h6><a href="#" style="color: black;">Privacy policy</a></h6> 
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+<!-- --------------------------------------------SCRIPT START FROM HERE-------------------------------------------- -->
+
+
+<script>
+    var counter = 0;
+    var questions = [
+      "QUESTION#1",
+      "QUESTION#2",
+      "QUESTION#3",
+      "QUESTION#4",
+      "QUESTION#5",
+    ];
+
+
+    var choices = [
+      {
+        opt1: "alpha1",
+        opt2: "beta1",
+        opt3: "gamma1",
+        opt4: "ray1",
+      },
+
+      {
+        opt1: "alpha2",
+        opt2: "beta2",
+        opt3: "gamma2",
+        opt4: "ray2",
+      },
+      {
+        opt1: "alpha3",
+        opt2: "beta3",
+        opt3: "gamma3",
+        opt4: "ray3",
+      },
+      {
+        opt1: "alpha4",
+        opt2: "beta4",
+        opt3: "gamma4",
+        opt4: "ray4",
+      },
+      {
+        opt1: "alpha5",
+        opt2: "beta5",
+        opt3: "gamma5",
+        opt4: "ray5",
+      },
+    ];
+
+    var currentPage =1;
+  </script>
+
+  <!-- <script>
+    function prev_qn() {
+      const parent_div = document.getElementById("pagination1");
+      if (counter >= 2) {
+        if (counter != 0 && counter > 0) {
+          counter--;
+          if (counter != 0) {
+            myFunc();
+          }
+
+          if (counter != 0) {
+            counter--;
+            const elem = document.createElement("div");
+            elem.setAttribute("id", "newDiv" + counter);
+            elem.innerHTML = questions[counter];
+            parent_div.appendChild(elem);
+
+            const parent_ques = document.createElement("div");
+            parent_ques.setAttribute("id", "questcontainer" + counter);
+            parent_ques.setAttribute("class", "quest");
+            elem.appendChild(parent_ques);
+
+            const parent_ques2 = document.createElement("div");
+            parent_ques2.setAttribute("id", "questcontainer" + counter);
+            parent_ques2.setAttribute("class", "quest");
+            elem.appendChild(parent_ques2);
+
+            const option1 = document.createElement("div");
+            option1.setAttribute("id", "opt" + 1);
+            option1.setAttribute("class", "opt");
+            option1.innerHTML = choices[counter].opt1;
+            /*parent_div.appendChild(option1);*/
+            parent_ques.appendChild(option1);
+
+            const option2 = document.createElement("div");
+            option2.setAttribute("id", "opt" + 2);
+            option2.setAttribute("class", "opt");
+            option2.innerHTML = choices[counter].opt2;
+            /*parent_div.appendChild(option2);*/
+            parent_ques.appendChild(option2);
+
+            const option3 = document.createElement("div");
+            option3.setAttribute("id", "opt" + 3);
+            option3.setAttribute("class", "opt");
+            option3.innerHTML = choices[counter].opt3;
+            /*parent_div.appendChild(option3);*/
+            parent_ques2.appendChild(option3);
+
+            const option4 = document.createElement("div");
+            option4.setAttribute("id", "opt" + 4);
+            option4.setAttribute("class", "opt");
+            option4.innerHTML = choices[counter].opt4;
+            /*parent_div.appendChild(option3);*/
+            parent_ques2.appendChild(option4);
+
+            counter++;
+          }
+        }
+      }
+    }
+  </script> -->
+
+  <!-- ======================================JQUERY TO DELETE THE DIV CHILDS INSIDE THE PARENT======================================-->
+
+  <script>
+    function myFunc() {
+      $("#pagination1 div").empty();
+    }
+  </script>
+
+  <!-- =====================================FUNCTION TO ADD QUESTIONS AND OPTIONS WHEN PAGE LOADS STARTS HERE===================================== -->
+
+  <script>
+    window.onload = function add_initial_question() {
+      myFunc();
+      const parent_div = document.getElementById("pagination1");
+      const previousBtn = document.getElementById('prev1');
+      previousBtn.disabled = true;
+      previousBtn.style.backgroundColor="#BA5F5F";
+
+
+      document.getElementById("next1").disabled=true;
+      document.getElementById("next1").style.backgroundColor="#57BFA7";
+
+
+
+    const questions_and_options_container = document.createElement("div");
+    questions_and_options_container.style.display="flex";
+    questions_and_options_container.style.flexDirection="column";
+    questions_and_options_container.style.alignItems="flex-start";
+
+    
+    const questcontainer = document.createElement("div");
+    // questcontainer.style.backgroundColor="purple";
+    questcontainer.style.padding="10px";
+
+  
+      const questholder = document.createElement("div");
+      questholder.setAttribute("id", "question" + counter);
+      questholder.innerHTML = questions[counter];
+      // questholder.style.backgroundColor='red';
+  
+      questcontainer.appendChild(questholder);
+
+      questions_and_options_container.appendChild(questcontainer);
+
+
+      const optionscontainer = document.createElement("div");
+      // optionscontainer.style.backgroundColor='crimson';
+      // optionscontainer.style.marginTop="2%";
+      optionscontainer.style.padding = "2%";
+      optionscontainer.style.display= "flex";
+      optionscontainer.style.flexDirection="row";
+      optionscontainer.style.justifyContent="center";
+      optionscontainer.style.height="fit-content"
+      optionscontainer.style.width="100%"
+      optionscontainer.style.cursor="pointer";
+      optionscontainer.style.gap="10px";
+        const optionexternalholder1 = document.createElement("div");
+
+        const optionsholder1 = document.createElement("div");
+        optionsholder1.style.display="flex";
+        optionsholder1.style.justifyContent="space-between";
+        optionsholder1.style.gap="10px";
+
+
+        //ADDING OPTION 1 
+          const option1 = document.createElement("div");
+          option1.setAttribute("id", "question"+counter+"opt" + 1);
+          option1.setAttribute("class", "opt");
+          option1.innerHTML = choices[counter].opt1;
+          option1.addEventListener("click",event=>{
+              
+              if(option1.getAttribute("status") == "true"){
+                option1.style.backgroundColor="#f1f1f1";
+                option1.setAttribute("status","false");                
+                if(option2.getAttribute("status" == "false")  && option3.getAttribute("status" == "false")  && option4.getAttribute("status" == "false")){
+                     document.getElementById("next1").disabled=true;
+                     document.getElementById("next1").style.backgroundColor="#57BFA7";
+                }  
+                else{
+                  document.getElementById("next1").disabled=true;
+                  document.getElementById("next1").style.backgroundColor="#57bfa7";
+                }
+              }
+
+              else{
+                   option1.style.backgroundColor="#03a07b";
+                   option1.setAttribute("status","true");                  
+                   option2.style.backgroundColor="#f1f1f1";
+                   option2.setAttribute("status","false");
+                   option3.style.backgroundColor="#f1f1f1";
+                   option3.setAttribute("status","false");        
+                   option4.style.backgroundColor="#f1f1f1";
+                   option4.setAttribute("status","false");        
+                   document.getElementById("next1").disabled=false;              
+                   document.getElementById("next1").style.backgroundColor="#03a07b";
+              }
+          });
+
+        //ADDING OPTION 2 
+          const option2 = document.createElement("div");
+          option2.setAttribute("id", "question"+counter+"opt" + 2);
+          option2.setAttribute("class", "opt");
+          option2.innerHTML = choices[counter].opt2;
+          option2.addEventListener("click",event=>{
+              
+              if(option2.getAttribute("status") == "true"){
+                option2.style.backgroundColor="#f1f1f1";
+                option2.setAttribute("status","false");                 
+                if(option1.getAttribute("status" == "false")  && option3.getAttribute("status" == "false")  && option4.getAttribute("status" == "false")){
+                     document.getElementById("next1").disabled=true;
+                     document.getElementById("next1").style.backgroundColor="#57BFA7";
+                }  
+                else{
+                  document.getElementById("next1").disabled=true;
+                  document.getElementById("next1").style.backgroundColor="#57bfa7";
+                } 
+              }
+              else{
+                   option2.style.backgroundColor="#03a07b";
+                   option2.setAttribute("status","true");     
+                   option1.style.backgroundColor="#f1f1f1";
+                   option1.setAttribute("status","false");
+                   option3.style.backgroundColor="#f1f1f1";
+                   option3.setAttribute("status","false");        
+                   option4.style.backgroundColor="#f1f1f1";
+                   option4.setAttribute("status","false");            
+                  document.getElementById("next1").disabled=false;
+                  document.getElementById("next1").style.backgroundColor="#03a07b";
+              }
+          });
+
+        //APPEND OPTION 1 AND OPTION 2 TO OPTIONS HOLDER  
+          optionsholder1.appendChild(option1);
+          optionsholder1.appendChild(option2);
+
+        //APPEND OPTION HOLDER TO EXTERNAL HOLDER  
+          optionexternalholder1.appendChild(optionsholder1);
+
+
+
+
+          const optionexternalholder2 = document.createElement("div");
+          
+
+          const optionsholder2 = document.createElement("div");
+          // optionsholder2.style.marginTop="3%";
+          optionsholder2.style.justifyContent="space-between";
+          optionsholder2.style.display="flex";
+          optionsholder2.style.gap="10px";
+
+
+        //ADDING OPTION 3
+          const option3 = document.createElement("div");
+          option3.setAttribute("id", "question"+counter+"opt" + 3);
+          option3.setAttribute("class", "opt");
+          option3.innerHTML = choices[counter].opt3;
+          option3.addEventListener("click",event=>{
+              
+              if(option3.getAttribute("status") == "true"){
+                option3.style.backgroundColor="#f1f1f1";
+                option3.setAttribute("status","false");              
+                if(option1.getAttribute("status" == "false")  && option2.getAttribute("status" == "false")  && option4.getAttribute("status" == "false")){
+                     document.getElementById("next1").disabled=true;
+                     document.getElementById("next1").style.backgroundColor="#57BFA7";
+
+                }  
+                else{
+                  document.getElementById("next1").disabled=true;
+                  document.getElementById("next1").style.backgroundColor="#57bfa7";
+                }    
+              }
+              else{
+                   option3.style.backgroundColor="#03a07b";
+                   option3.setAttribute("status","true");                  
+                   option2.style.backgroundColor="#f1f1f1";
+                   option2.setAttribute("status","false");
+                   option1.style.backgroundColor="#f1f1f1";
+                   option1.setAttribute("status","false");        
+                   option4.style.backgroundColor="#f1f1f1";
+                   option4.setAttribute("status","false");    
+                  document.getElementById("next1").disabled=false;   
+                  document.getElementById("next1").style.backgroundColor="#03a07b";
+                }
+          });
+
+        //ADDING OPTION 4 
+          const option4 = document.createElement("div");
+          option4.setAttribute("id", "question"+counter+"opt" + 4);
+          option4.setAttribute("class", "opt");
+          option4.innerHTML = choices[counter].opt4;
+          option4.addEventListener("click",event=>{
+              
+              if(option4.getAttribute("status") == "true"){
+                option4.style.backgroundColor="#f1f1f1";
+                option4.setAttribute("status","false");                  
+                if(option1.getAttribute("status" == "false")  && option2.getAttribute("status" == "false")  && option3.getAttribute("status" == "false")){
+                     document.getElementById("next1").disabled=true;
+                     document.getElementById("next1").style.backgroundColor="#57BFA7";
+                }  
+                else{
+                  document.getElementById("next1").disabled=true;
+                  document.getElementById("next1").style.backgroundColor="#57bfa7";
+                }    
+              }
+              else{
+                   option4.style.backgroundColor="#03a07b";
+                   option4.setAttribute("status","true");                  
+                   option2.style.backgroundColor="#f1f1f1";
+                   option2.setAttribute("status","false");
+                   option3.style.backgroundColor="#f1f1f1";
+                   option3.setAttribute("status","false");        
+                   option1.style.backgroundColor="#f1f1f1";
+                   option1.setAttribute("status","false");    
+                  document.getElementById("next1").disabled=false;
+                  document.getElementById("next1").style.backgroundColor="#03a07b";
+              }
+          });
+        //ADDING OPTION 3 AND OPTION 4 TO OPTIONS HOLDER  
+          optionsholder2.appendChild(option3);
+          optionsholder2.appendChild(option4);
+
+        //APPEND OPTIONS HOLDER TO OPTION EXTERNAL HOLDER 2  
+          optionexternalholder2.appendChild(optionsholder2);
+
+
+
+        //APPEND OPTION EXTERNAL HOLDER TO OPTION CONTAINER
+          optionscontainer.appendChild(optionexternalholder1);
+          optionscontainer.appendChild(optionexternalholder2);
+
+
+        //APPEND OPTION CONTAINER TO PARENT CONTAINER  
+        questions_and_options_container.appendChild(optionscontainer)
+          parent_div.appendChild(questions_and_options_container);
+
+
+
+      // counter++;
+      var progress = (currentPage / questions.length) * 100;
+      progressbar1.style.width = progress + "%";
+    };
+  </script>
+
+
+  <!-- =====================================FUNCTION TO ADD QUESTIONS AND OPTIONS WHEN PAGE LOADS END HERE===================================== -->
+
+
+
+
+  <!-- ====================================CHANGE QUESTION FUNCTION STARTS HERE==================================== -->
+
+
+
+  <script>
+function change_question() {
+
+const previousBtn = document.getElementById('prev1');
+      previousBtn.disabled = false;
+      previousBtn.style.backgroundColor="#980F0F";
+// console.log("current page"+currentPage);
+console.log(questions.length);
+
+
+if(currentPage < questions.length){
+  currentPage++;
+// }
+console.log("current page"+currentPage);
+ document.getElementById("next1").disabled=true;
+ document.getElementById("next1").style.backgroundColor="#57BFA7";
+// if(counter<questions.length){
+  myFunc();
+  counter++;
+  console.log("counter"+counter);
+
+// console.log("current Page"+currentPage);
+// console.log("questions"+questions.length);
+
+// console.log("counter value: "+ counter);
+
+if(counter == questions.length-1){
+  var nextBtn = document.getElementById("next1");
+  nextBtn.innerText = "Submit";
+}
+
+
+    const parent_div = document.getElementById("pagination1");
+
+    const questions_and_options_container = document.createElement("div");
+    questions_and_options_container.style.display="flex";
+    questions_and_options_container.style.cursor="pointer";
+    questions_and_options_container.style.flexDirection="column";
+
+    
+    const questcontainer = document.createElement("div");
+    // questcontainer.style.backgroundColor="purple";
+    questcontainer.style.padding="10px";
+
+  
+      const questholder = document.createElement("div");
+      questholder.setAttribute("id", "question" + counter);
+      questholder.innerHTML = questions[counter];
+      // questholder.style.backgroundColor='red';
+  
+      questcontainer.appendChild(questholder);
+
+      questions_and_options_container.appendChild(questcontainer);
+
+
+      const optionscontainer = document.createElement("div");
+      // optionscontainer.style.backgroundColor='crimson';
+      optionscontainer.style.marginTop="2%";
+      optionscontainer.style.padding = "2%";
+      optionscontainer.style.display= "flex";
+      optionscontainer.style.flexDirection="row";
+      optionscontainer.style.justifyContent="center";
+      optionscontainer.style.height="fit-content"
+    optionscontainer.style.gap="10px";
+        const optionexternalholder1 = document.createElement("div");
+        const optionsholder1 = document.createElement("div");
+        optionsholder1.style.display="flex";
+        optionsholder1.style.justifyContent="space-between";
+        //ADDING OPTION 1 
+          const option1 = document.createElement("div");
+          option1.setAttribute("id", "question"+counter+"opt" + 1);
+          option1.setAttribute("class", "opt");
+          option1.innerHTML = choices[counter].opt1;
+          option1.addEventListener("click",event=>{
+              if(option1.getAttribute("status") == "true"){
+                option1.style.backgroundColor="#f1f1f1";
+                option1.setAttribute("status","false");                
+                
+                 if(option4.getAttribute("status" == "false")  && option2.getAttribute("status" == "false")  && option3.getAttribute("status" == "false")){
+                     document.getElementById("next1").disabled=true;
+                     document.getElementById("next1").style.backgroundColor="#57BFA7";
+                }  
+                else{
+                  document.getElementById("next1").disabled=true;
+                  document.getElementById("next1").style.backgroundColor="#57bfa7";
+                } 
+
+              }
+              else{
+                   option1.style.backgroundColor="#03a07b";
+                   option1.setAttribute("status","true");                  
+                   option2.style.backgroundColor="#f1f1f1";
+                   option2.setAttribute("status","false");
+                   option3.style.backgroundColor="#f1f1f1";
+                   option3.setAttribute("status","false");        
+                   option4.style.backgroundColor="#f1f1f1";
+                   option4.setAttribute("status","false");                                  
+                  document.getElementById("next1").disabled=false;
+                  document.getElementById("next1").style.backgroundColor="#03a07b";
+              }
+          });
+
+        //ADDING OPTION 2 
+          const option2 = document.createElement("div");
+          option2.setAttribute("id", "question"+counter+"opt" + 2);
+          option2.setAttribute("class", "opt");
+          option2.innerHTML = choices[counter].opt2;
+          option2.addEventListener("click",event=>{
+              
+              if(option2.getAttribute("status") == "true"){
+                option2.style.backgroundColor="#f1f1f1";
+                option2.setAttribute("status","false");                  
+
+                if(option1.getAttribute("status" == "false")  && option3.getAttribute("status" == "false")  && option4.getAttribute("status" == "false")){
+                     document.getElementById("next1").disabled=true;
+                     document.getElementById("next1").style.backgroundColor="#57BFA7";
+                }  
+                else{
+                  document.getElementById("next1").disabled=true;
+                  document.getElementById("next1").style.backgroundColor="#57bfa7";
+                } 
+
+              }
+              else{
+                   option2.style.backgroundColor="#03a07b";
+                   option2.setAttribute("status","true");     
+                   option1.style.backgroundColor="#f1f1f1";
+                   option1.setAttribute("status","false");
+                   option3.style.backgroundColor="#f1f1f1";
+                   option3.setAttribute("status","false");        
+                   option4.style.backgroundColor="#f1f1f1";
+                   option4.setAttribute("status","false");                 
+                   document.getElementById("next1").disabled=false;
+                  document.getElementById("next1").style.backgroundColor="#03a07b";
+              }
+          });
+
+        //APPEND OPTION 1 AND OPTION 2 TO OPTIONS HOLDER  
+          optionsholder1.appendChild(option1);
+          optionsholder1.appendChild(option2);
+          optionsholder1.style.gap="10px";
+
+        //APPEND OPTION HOLDER TO EXTERNAL HOLDER  
+          optionexternalholder1.appendChild(optionsholder1);
+
+
+
+
+          const optionexternalholder2 = document.createElement("div");
+          
+
+          const optionsholder2 = document.createElement("div");
+          // optionsholder2.style.marginTop="3%";
+          optionsholder2.style.justifyContent="space-between";
+          optionsholder2.style.display="flex";
+          optionsholder2.style.gap="10px";
+
+
+        //ADDING OPTION 3
+          const option3 = document.createElement("div");
+          option3.setAttribute("id", "question"+counter+"opt" + 3);
+          option3.setAttribute("class", "opt");
+          option3.innerHTML = choices[counter].opt3;
+          option3.addEventListener("click",event=>{
+              
+              if(option3.getAttribute("status") == "true"){
+                option3.style.backgroundColor="#f1f1f1";
+                option3.setAttribute("status","false");                  
+                if(option1.getAttribute("status" == "false")  && option2.getAttribute("status" == "false")  && option4.getAttribute("status" == "false")){
+                     document.getElementById("next1").disabled=true;
+                     document.getElementById("next1").style.backgroundColor="#57BFA7";
+                }  
+                else{
+                  document.getElementById("next1").disabled=true;
+                  document.getElementById("next1").style.backgroundColor="#57bfa7";
+                } 
+              }
+              else{
+                   option3.style.backgroundColor="#03a07b";
+                   option3.setAttribute("status","true");                  
+                   option2.style.backgroundColor="#f1f1f1";
+                   option2.setAttribute("status","false");
+                   option1.style.backgroundColor="#f1f1f1";
+                   option1.setAttribute("status","false");        
+                   option4.style.backgroundColor="#f1f1f1";
+                   option4.setAttribute("status","false");    
+                     document.getElementById("next1").disabled=false;
+                  document.getElementById("next1").style.backgroundColor="#03a07b";
+              }
+          });
+
+        //ADDING OPTION 4 
+          const option4 = document.createElement("div");
+          option4.setAttribute("id", "question"+counter+"opt" + 4);
+          option4.setAttribute("class", "opt");
+          option4.innerHTML = choices[counter].opt4;
+          option4.addEventListener("click",event=>{
+              
+              if(option4.getAttribute("status") == "true"){
+                option4.style.backgroundColor="#f1f1f1";
+                option4.setAttribute("status","false");
+                if(option1.getAttribute("status" == "false")  && option2.getAttribute("status" == "false")  && option3.getAttribute("status" == "false")){
+                     document.getElementById("next1").disabled=true;
+                     document.getElementById("next1").style.backgroundColor="#57BFA7";
+                }  
+                else{
+                  document.getElementById("next1").disabled=true;
+                  document.getElementById("next1").style.backgroundColor="#57bfa7";
+                }                   
+              }
+              else{
+                   option4.style.backgroundColor="#03a07b";
+                   option4.setAttribute("status","true");                  
+                   option2.style.backgroundColor="#f1f1f1";
+                   option2.setAttribute("status","false");
+                   option3.style.backgroundColor="#f1f1f1";
+                   option3.setAttribute("status","false");        
+                   option1.style.backgroundColor="#f1f1f1";
+                   option1.setAttribute("status","false");    
+                     document.getElementById("next1").disabled=false;
+                  document.getElementById("next1").style.backgroundColor="#03a07b";
+              }
+          });
+        //ADDING OPTION 3 AND OPTION 4 TO OPTIONS HOLDER  
+          optionsholder2.appendChild(option3);
+          optionsholder2.appendChild(option4);
+
+        //APPEND OPTIONS HOLDER TO OPTION EXTERNAL HOLDER 2  
+          optionexternalholder2.appendChild(optionsholder2);
+
+
+
+        //APPEND OPTION EXTERNAL HOLDER TO OPTION CONTAINER
+          optionscontainer.appendChild(optionexternalholder1);
+          optionscontainer.appendChild(optionexternalholder2);
+
+
+        //APPEND OPTION CONTAINER TO PARENT CONTAINER  
+        questions_and_options_container.appendChild(optionscontainer)
+          parent_div.appendChild(questions_and_options_container);
+
+
+      var progress = ( currentPage/ questions.length) * 100;
+      progressbar1.style.width = progress + "%";
+
+      // counter++;
+
+          }
+  }
+  </script>
+
+
+
+
+<script>
+function prev_qn(){
+if(counter == 1){
+const parent_div = document.getElementById("pagination1");
+      const previousBtn = document.getElementById('prev1');
+      previousBtn.disabled = true;
+      previousBtn.style.backgroundColor="#BA5F5F";
+}
+if (counter >=1) {
+myFunc();
+console.log("Counter value in prev button: "+counter);
+console.log("Questions value in prev button: "+(questions.length-1));
+currentPage--;
+console.log("prev question counter value: "+counter);
+--counter;
+if(counter < questions.length-1){
+  var nextBtn = document.getElementById("next1");
+  nextBtn.innerText = "Next";
+}
+document.getElementById("prev1");
+
+    const parent_div = document.getElementById("pagination1");
+
+      
+    const questions_and_options_container = document.createElement("div");
+    questions_and_options_container.style.display="flex";
+    questions_and_options_container.style.flexDirection="column";
+
+    
+    const questcontainer = document.createElement("div");
+    // questcontainer.style.backgroundColor="purple";
+    questcontainer.style.padding="10px";
+
+  
+      const questholder = document.createElement("div");
+      questholder.setAttribute("id", "question" + counter);
+      questholder.innerHTML = questions[counter];
+      // questholder.style.backgroundColor='red';
+  
+      questcontainer.appendChild(questholder);
+
+      questions_and_options_container.appendChild(questcontainer);
+
+
+      const optionscontainer = document.createElement("div");
+      // optionscontainer.style.backgroundColor='crimson';
+      optionscontainer.style.marginTop="2%";
+      optionscontainer.style.padding = "2%";
+      optionscontainer.style.display= "flex";
+      optionscontainer.style.justifyContent= "center";
+      optionscontainer.style.alignItems= "center";
+      optionscontainer.style.flexDirection="row";
+      optionscontainer.style.height="fit-content"
+      optionscontainer.style.cursor="pointer";
+      optionscontainer.style.gap="10px";
+
+      
+
+
+
+        const optionexternalholder1 = document.createElement("div");
+
+        const optionsholder1 = document.createElement("div");
+        optionsholder1.style.display="flex";
+        optionsholder1.style.justifyContent="space-between";
+         optionsholder1.style.gap="10px";
+
+        //ADDING OPTION 1 
+          const option1 = document.createElement("div");
+          option1.setAttribute("id", "question"+counter+"opt" + 1);
+          option1.setAttribute("class", "opt");
+          option1.innerHTML = choices[counter].opt1;
+          option1.addEventListener("click",event=>{
+              
+              if(option1.getAttribute("status") == "true"){
+                option1.style.backgroundColor="#f1f1f1";
+                option1.setAttribute("status","false");                  
+            
+                if(option2.getAttribute("status" == "false")  && option3.getAttribute("status" == "false")  && option4.getAttribute("status" == "false")){
+                     document.getElementById("next1").disabled=true;
+                     document.getElementById("next1").style.backgroundColor="#57BFA7";
+                }  
+                else{
+                  document.getElementById("next1").disabled=true;
+                  document.getElementById("next1").style.backgroundColor="#57bfa7";
+                }  
+              }
+              else{
+                   option1.style.backgroundColor="#03a07b";
+                   option1.setAttribute("status","true");                  
+                   option2.style.backgroundColor="#f1f1f1";
+                   option2.setAttribute("status","false");
+                   option3.style.backgroundColor="#f1f1f1";
+                   option3.setAttribute("status","false");        
+                   option4.style.backgroundColor="#f1f1f1";
+                   option4.setAttribute("status","false");                         
+                   document.getElementById("next1").disabled=false;
+                  document.getElementById("next1").style.backgroundColor="#03a07b";           
+              }
+          });
+
+        //ADDING OPTION 2 
+          const option2 = document.createElement("div");
+          option2.setAttribute("id", "question"+counter+"opt" + 2);
+          option2.setAttribute("class", "opt");
+          option2.innerHTML = choices[counter].opt2;
+          option2.addEventListener("click",event=>{
+              
+              if(option2.getAttribute("status") == "true"){
+                option2.style.backgroundColor="#f1f1f1";
+                option2.setAttribute("status","false");                  
+                if(option1.getAttribute("status" == "false")  && option4.getAttribute("status" == "false")  && option3.getAttribute("status" == "false")){
+                     document.getElementById("next1").disabled=true;
+                     document.getElementById("next1").style.backgroundColor="#57BFA7";
+                }  
+                else{
+                  document.getElementById("next1").disabled=true;
+                  document.getElementById("next1").style.backgroundColor="#57bfa7";
+                }
+              }
+              else{
+                   option2.style.backgroundColor="#03a07b";
+                   option2.setAttribute("status","true");     
+                   option1.style.backgroundColor="#f1f1f1";
+                   option1.setAttribute("status","false");
+                   option3.style.backgroundColor="#f1f1f1";
+                   option3.setAttribute("status","false");        
+                   option4.style.backgroundColor="#f1f1f1";
+                   option4.setAttribute("status","false");                 
+                   document.getElementById("next1").disabled=false;
+                  document.getElementById("next1").style.backgroundColor="#03a07b";
+              }
+          });
+
+        //APPEND OPTION 1 AND OPTION 2 TO OPTIONS HOLDER  
+          optionsholder1.appendChild(option1);
+          optionsholder1.appendChild(option2);
+
+        //APPEND OPTION HOLDER TO EXTERNAL HOLDER  
+          optionexternalholder1.appendChild(optionsholder1);
+
+
+
+
+          const optionexternalholder2 = document.createElement("div");
+          
+
+          const optionsholder2 = document.createElement("div");
+          optionsholder2.style.justifyContent="space-between";
+          optionsholder2.style.display="flex";
+          optionsholder2.style.gap="10px";
+
+
+        //ADDING OPTION 3
+          const option3 = document.createElement("div");
+          option3.setAttribute("id", "question"+counter+"opt" + 3);
+          option3.setAttribute("class", "opt");
+          option3.innerHTML = choices[counter].opt3;
+          option3.addEventListener("click",event=>{
+              if(option3.getAttribute("status") == "true"){
+                option3.style.backgroundColor="#f1f1f1";
+                option3.setAttribute("status","false");           
+                if(option1.getAttribute("status" == "false")  && option2.getAttribute("status" == "false")  && option4.getAttribute("status" == "false")){
+                     document.getElementById("next1").disabled=true;
+                     document.getElementById("next1").style.backgroundColor="#57BFA7";
+                }  
+                else{
+                  document.getElementById("next1").disabled=true;
+                  document.getElementById("next1").style.backgroundColor="#57bfa7";
+                }       
+              }
+              else{
+                   option3.style.backgroundColor="#03a07b";
+                   option3.setAttribute("status","true");                  
+                   option2.style.backgroundColor="#f1f1f1";
+                   option2.setAttribute("status","false");
+                   option1.style.backgroundColor="#f1f1f1";
+                   option1.setAttribute("status","false");        
+                   option4.style.backgroundColor="#f1f1f1";
+                   option4.setAttribute("status","false");    
+                  document.getElementById("next1").disabled=false;
+                  document.getElementById("next1").style.backgroundColor="#03a07b";
+              }
+          });
+
+        //ADDING OPTION 4 
+          const option4 = document.createElement("div");
+          option4.setAttribute("id", "question"+counter+"opt" + 4);
+          option4.setAttribute("class", "opt");
+          option4.innerHTML = choices[counter].opt4;
+          option4.addEventListener("click",event=>{
+              
+              if(option4.getAttribute("status") == "true"){
+                option4.style.backgroundColor="#f1f1f1";
+                option4.setAttribute("status","false");                  
+                if(option1.getAttribute("status" == "false")  && option2.getAttribute("status" == "false")  && option3.getAttribute("status" == "false")){
+                     document.getElementById("next1").disabled=true;
+                     document.getElementById("next1").style.backgroundColor="#57BFA7";
+                }  
+                else{
+                  document.getElementById("next1").disabled=true;
+                  document.getElementById("next1").style.backgroundColor="#57bfa7";
+                }       
+              }
+              else{
+                   option4.style.backgroundColor="#03a07b";
+                   option4.setAttribute("status","true");                  
+                   option2.style.backgroundColor="#f1f1f1";
+                   option2.setAttribute("status","false");
+                   option3.style.backgroundColor="#f1f1f1";
+                   option3.setAttribute("status","false");        
+                   option1.style.backgroundColor="#f1f1f1";
+                   option1.setAttribute("status","false");    
+                   document.getElementById("next1").disabled=false;
+                  document.getElementById("next1").style.backgroundColor="#03a07b";
+              }
+          });
+        //ADDING OPTION 3 AND OPTION 4 TO OPTIONS HOLDER  
+          optionsholder2.appendChild(option3);
+          optionsholder2.appendChild(option4);
+
+        //APPEND OPTIONS HOLDER TO OPTION EXTERNAL HOLDER 2  
+          optionexternalholder2.appendChild(optionsholder2);
+
+
+
+        //APPEND OPTION EXTERNAL HOLDER TO OPTION CONTAINER
+          optionscontainer.appendChild(optionexternalholder1);
+          optionscontainer.appendChild(optionexternalholder2);
+
+
+        //APPEND OPTION CONTAINER TO PARENT CONTAINER  
+        questions_and_options_container.appendChild(optionscontainer)
+          parent_div.appendChild(questions_and_options_container);
+
+
+      var progress = (currentPage / questions.length) * 100;
+      progressbar1.style.width = progress + "%";
+
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <script>
+    function change_question() {
+      const parent_div = document.getElementById("pagination1");
+
+      if (counter <= questions.length - 1) {
+        if (counter == 1) {
+          myFunc();
+          const elem = document.createElement("div");
+          elem.setAttribute("id", "newDiv" + counter);
+          elem.innerHTML = questions[counter];
+          parent_div.appendChild(elem);
+          const parent_ques = document.createElement("div");
+          parent_ques.setAttribute("id", "questcontainer" + counter);
+          parent_ques.setAttribute("class", "quest");
+          elem.appendChild(parent_ques);
+          const parent_ques2 = document.createElement("div");
+          parent_ques2.setAttribute("id", "questcontainer" + counter);
+          parent_ques2.setAttribute("class", "quest");
+          elem.appendChild(parent_ques2);
+          const option1 = document.createElement("div");
+          option1.setAttribute("id", "opt" + 1);
+          option1.setAttribute("class", "opt");
+          option1.innerHTML = choices[counter].opt1;
+          /*parent_div.appendChild(option1);*/
+          parent_ques.appendChild(option1);
+          const option2 = document.createElement("div");
+          option2.setAttribute("id", "opt" + 2);
+          option2.setAttribute("class", "opt");
+          option2.innerHTML = choices[counter].opt2;
+          /*parent_div.appendChild(option2);*/
+          parent_ques.appendChild(option2);
+          const option3 = document.createElement("div");
+          option3.setAttribute("id", "opt" + 3);
+          option3.setAttribute("class", "opt");
+          option3.innerHTML = choices[counter].opt3;
+          /*parent_div.appendChild(option3);*/
+          parent_ques2.appendChild(option3);
+          const option4 = document.createElement("div");
+          option4.setAttribute("id", "opt" + 4);
+          option4.setAttribute("class", "opt");
+          option4.innerHTML = choices[counter].opt4;
+          /*parent_div.appendChild(option3);*/
+          parent_ques2.appendChild(option4);
+          counter++;
+        } else if (counter != 1) {
+          myFunc();
+          const elem = document.createElement("div");
+          elem.setAttribute("id", "newDiv" + counter);
+          elem.innerHTML = questions[counter];
+          parent_div.appendChild(elem);
+          const parent_ques = document.createElement("div");
+          parent_ques.setAttribute("id", "questcontainer" + counter);
+          parent_ques.setAttribute("class", "quest");
+          elem.appendChild(parent_ques);
+          const parent_ques2 = document.createElement("div");
+          parent_ques2.setAttribute("id", "questcontainer" + counter);
+          parent_ques2.setAttribute("class", "quest");
+          elem.appendChild(parent_ques2);
+          const option1 = document.createElement("div");
+          option1.setAttribute("id", "opt" + 1);
+          option1.setAttribute("class", "opt");
+          option1.innerHTML = choices[counter].opt1;
+          /*parent_div.appendChild(option1);*/
+          parent_ques.appendChild(option1);
+          const option2 = document.createElement("div");
+          option2.setAttribute("id", "opt" + 2);
+          option2.setAttribute("class", "opt");
+          option2.innerHTML = choices[counter].opt2;
+          /*parent_div.appendChild(option2);*/
+          parent_ques.appendChild(option2);
+          const option3 = document.createElement("div");
+          option3.setAttribute("id", "opt" + 3);
+          option3.setAttribute("class", "opt");
+          option3.innerHTML = choices[counter].opt3;
+          /*parent_div.appendChild(option3);*/
+          parent_ques2.appendChild(option3);
+          const option4 = document.createElement("div");
+          option4.setAttribute("id", "opt" + 4);
+          option4.setAttribute("class", "opt");
+          option4.innerHTML = choices[counter].opt4;
+          /*parent_div.appendChild(option3);*/
+          parent_ques2.appendChild(option4);
+
+          counter++;
+        }
+      }
+
+      // else if (newDiv && counter != 0) {
+      //     parent_div.removeChild(newDiv);
+      //     const elem = document.createElement('div');
+      //     elem.innerHTML = questions[counter];
+      //    parent_div.appendChild(elem);
+      //    counter++;
+      // }
+    }
+  </script>
+  <script>
+    // pagination 1
+    var currentPage1 = 1;
+    var pages1 = document.querySelectorAll("#pagination1 > div");
+    var progressbar1 = document.querySelector("#progressbar1");
+    let nextBtn = document.getElementById("next1");
+    document.querySelector("#prev1").addEventListener("click", function () {
+      if (currentPage1 > 1) {
+        currentPage1--;
+        console.log(currentPage1);
+        //update pagination
+        // for (var i = 0; i < pages1.length; i++) {
+        var progress = (currentPage1 / questions.length) * 100;
+        progressbar1.style.width = progress + "%";
+        if (currentPage1 < questions.length) {
+          nextBtn.innerText = "Next";
+        }
+      }
+    });
+    document.querySelector("#next1").addEventListener("click", function () {
+      if (currentPage1 <= questions.length - 1) {
+        currentPage1++;
+        console.log(currentPage1);
+        if (currentPage1 == questions.length) {
+          nextBtn.innerText = "Submit";
+        }
+        //update progressbar
+        var progress = (currentPage1 / questions.length) * 100;
+        progressbar1.style.width = progress + "%";
+      }
+    });
+    // //update pagination and progressbar on page load
+    // for (var i = 0; i < pages1.length; i++) {
+    //     if (i + 1 === currentPage1) {
+    //         pages1[i].style.display = "block";
+    //     } else {
+    //         pages1[i].style.display = "none";
+    //     }
+    // }
+    // var progress = (currentPage1 / pages1.length) * 100;
+    // progressbar1.style.width = progress + "%";
+  </script>
+  -->
+  <script>
+    function change_logo() {
+      small_logo = document.getElementById("smlogo");
+      const display = window.getComputedStyle(small_logo).display;
+      if (display === "flex") {
+        document.getElementById("smlogo").style.display = "none";
+      } else {
+        console.log("inside none");
+        document.getElementById("smlogo").style.display = "flex";
+      }
+    }
+  </script>
+  <script>
+    const body = document.querySelector("body"),
+      sidebar = body.querySelector("nav"),
+      toggle = body.querySelector(".toggle"),
+      modeText = body.querySelector(".mode-text");
+    toggle.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    });
+  </script>
+<script>
+    function menuToggle() {
+      console.log("I'm in.....!");
+      const toggleMenu = document.querySelector(".menu1");
+      toggleMenu.classList.toggle("active");
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script> -->
+  <!-- <script src="script.js"></script>-->
+</body>
+</html>

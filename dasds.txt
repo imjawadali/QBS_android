@@ -1,0 +1,18 @@
+barcode is missing
+group_code is missing
+group_name is missing
+codeBars not in database column
+itmsGrpCod not in databse column
+invntryUom not in database column
+salUnitMsr not in database column
+updated_by is mising
+
+
+
+
+
+
+codeBars is barcode
+itmsGrpCod is group_code
+invntryUom is inv_unit_msr
+salUnitMsr is sal_unit_msr

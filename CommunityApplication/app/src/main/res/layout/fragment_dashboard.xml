@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cmapb"
+    tools:context=".DashboardFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/main_menu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/menublack"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/text_pakistan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="PAKISTAN WELFARE ASSOCIATION"
+                android:textColor="#92D050"
+                android:textSize="16sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/text_linglong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_pakistan"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppinsbold"
+                android:text="LILONGWE (CENTRAL &amp; NORTH) MALAWI"
+                android:textColor="#92D050"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/text_chairman_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_linglong"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Charmain"
+                android:textColor="#00B050"
+                android:textSize="12sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/text_chairman_nane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_chairman_heading"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="DR. Syed Tariq"
+                android:textColor="#000"
+                android:textSize="12sp"
+
+                />
+
+            <TextView
+                android:id="@+id/text_chairmain_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_chairman_nane"
+                android:layout_marginLeft="20dp"
+                android:text="+265 992 610 002"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/text_vcchairman_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_chairmain_number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Vice Charmain"
+                android:textColor="#00B050"
+                android:textSize="12sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/text_vcchairman_nane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_vcchairman_heading"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="DR. Syed Khurram"
+                android:textColor="#000"
+                android:textSize="12sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/text_vcchairmain_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_vcchairman_nane"
+                android:layout_marginLeft="20dp"
+                android:text="+265 992 610 002"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/text_sec_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_vcchairmain_number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Vice Charmain"
+                android:textColor="#00B050"
+                android:textSize="12sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/text_sec_nane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_sec_heading"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="DR. Syed Khurram"
+                android:textColor="#000"
+                android:textSize="12sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/text_sec_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_sec_nane"
+                android:layout_marginLeft="20dp"
+                android:text="+265 992 610 002"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/text_ter_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_sec_number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="TREASURE"
+                android:textColor="#00B050"
+                android:textSize="12sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/text_ter_nane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_ter_heading"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="DR. Syed Khurram"
+                android:textColor="#000"
+                android:textSize="12sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/text_ter_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_ter_nane"
+                android:layout_marginLeft="20dp"
+                android:text="+265 992 610 002"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/text_boardmember_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_ter_number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="BOARD MEMBER"
+                android:textColor="#00B050"
+                android:textSize="12sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/text_number_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_boardmember_heading"
+                android:layout_marginLeft="20dp"
+                android:text="Hamza (+265 992 610 002)"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/text_number_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_number_one"
+                android:layout_marginLeft="20dp"
+                android:text="Kamran (+265 992 610 002)"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/text_number_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_number_two"
+                android:layout_marginLeft="20dp"
+                android:text="Kashan (+265 992 610 002)"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/text_number_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_number_three"
+                android:layout_marginLeft="20dp"
+                android:text="Faizan (+265 992 610 002)"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/text_trustees_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_number_four"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="TRUSTEES"
+                android:textColor="#00B050"
+                android:textSize="12sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/text_number_tone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_trustees_heading"
+                android:layout_marginLeft="20dp"
+                android:text="Abdul Rehman (+265 992 610 002)"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/text_number_ttow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_number_tone"
+                android:layout_marginLeft="20dp"
+                android:text="Abdullah (+265 992 610 002)"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/text_number_tthre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_number_ttow"
+                android:layout_marginLeft="20dp"
+                android:text="Abdullah (+265 992 610 002)"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/text_number_tfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_number_tthre"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="32dp"
+                android:text="Abdullah (+265 992 610 002)"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

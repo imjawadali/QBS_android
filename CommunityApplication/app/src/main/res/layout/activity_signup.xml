@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cmapb"
+    tools:context=".SignupActivity">
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="REGISTER"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/button_back"
+            android:layout_marginLeft="12dp"
+            />
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/left"
+            />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E7F7FE"
+            >
+
+
+            <TextView
+                android:id="@+id/text_fullname_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Full Name"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/edit_full_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:background="@null"
+                android:fontFamily="@font/poppinslight"
+                android:hint="Enter Your Full Name"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="12dp"
+                android:layout_below="@id/text_fullname_heading"/>
+
+
+            <View
+                android:id="@+id/view_edit_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_below="@+id/edit_full_name_text"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E2EBF2">
+
+            </View>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/text_select_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_edit_fullname"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Select Gender"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/text_select_gender"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="12dp">
+
+                <RadioButton
+                    android:id="@+id/male_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:layoutDirection="rtl"
+                    android:textSize="16sp"/>
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:layoutDirection="rtl"
+                    android:textSize="16sp"/>
+
+            </RadioGroup>
+
+
+
+            <View
+                android:id="@+id/view_radio"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_below="@+id/radio_group"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E2EBF2">
+
+            </View>
+
+
+            <TextView
+                android:id="@+id/text_date_of_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_radio"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Date Of Birth"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+
+
+
+            <TextView
+                android:id="@+id/text_date_of_birth_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_date_of_birth"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="12/10/2012"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/image_calender"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/calendernewbgss"
+                android:layout_below="@+id/text_date_of_birth"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="10dp"/>
+
+
+            <View
+                android:id="@+id/view_date"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_below="@+id/text_date_of_birth_set"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E2EBF2">
+
+            </View>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/text_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_date"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Contact No"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+
+
+            <EditText
+                android:id="@+id/edit_text_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:background="@null"
+                android:fontFamily="@font/poppinslight"
+                android:hint="Enter Contact Number"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/text_contact"/>
+
+
+
+            <View
+                android:id="@+id/view_contact"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_below="@+id/edit_text_contact"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E2EBF2">
+
+            </View>
+
+
+
+            <TextView
+                android:id="@+id/text_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_contact"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Email Address"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+
+
+            <EditText
+                android:id="@+id/edit_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:background="@null"
+                android:fontFamily="@font/poppinslight"
+                android:hint="Enter Email"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/text_email"/>
+
+
+            <View
+                android:id="@+id/view_email"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_below="@+id/edit_text_email"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E2EBF2">
+
+            </View>
+
+
+            <TextView
+                android:id="@+id/text_addressinmalawi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_email"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Address In Malawi"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+
+
+            <EditText
+                android:id="@+id/edit_text_address_malawi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:background="@null"
+                android:fontFamily="@font/poppinslight"
+                android:hint="Enter Address"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/text_addressinmalawi"/>
+
+
+            <View
+                android:id="@+id/view_Address_malawai"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_below="@+id/edit_text_address_malawi"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E2EBF2">
+
+            </View>
+
+
+
+            <TextView
+                android:id="@+id/text_addresspak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_Address_malawai"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Address In Pakistan"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+
+
+            <EditText
+                android:id="@+id/edit_text_address_pak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:background="@null"
+                android:fontFamily="@font/poppinslight"
+                android:hint="Enter Address"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/text_addresspak"/>
+
+
+
+            <View
+                android:id="@+id/view_Address_pak"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_below="@+id/edit_text_address_pak"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E2EBF2">
+
+            </View>
+
+
+            <TextView
+                android:id="@+id/text_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_Address_pak"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Password"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+
+
+            <EditText
+                android:id="@+id/edit_text_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:background="@null"
+                android:fontFamily="@font/poppinslight"
+                android:hint="Enter password"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/text_password"/>
+
+
+
+            <View
+                android:id="@+id/view_password"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_below="@+id/edit_text_password"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E2EBF2">
+
+            </View>
+
+
+
+
+
+
+
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/view_password"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="56dp"
+                android:background="@drawable/capsole_new_bg"
+                android:elevation="8dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="Register"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="32dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ShakerApplication</string>
+    <string-array name="Plant">
+        <item>PLANT</item>
+        <item>Plant1</item>
+        <item>Plant2</item>
+        <item>Plant3</item>
+    </string-array>
+    <string-array name="Plant1">
+        <item>Storage location</item>
+        <item>Storage location1</item>
+        <item>Storage location2</item>
+        <item>Storage location3</item>
+    </string-array>
+    <string-array name="warehouse">
+        <item>WAREHOUSE 01</item>
+        <item>WAREHOUSE 02</item>
+        <item>WAREHOUSE 03</item>
+        <item>WAREHOUSE 04</item>
+    </string-array>
+</resources>

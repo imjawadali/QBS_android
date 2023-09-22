@@ -1,0 +1,1 @@
+how to save the Inventory_Transfer_Request_Screen addtolist card when i click the itemname and show popup and click card and send data to nventory_Transfer_Request_Screen but issue is when i second time click item name and show popup and when send data to nventory_Transfer_Request_Screen so the previous add to list card remove resolve it i want to save the previos data

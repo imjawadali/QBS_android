@@ -1,0 +1,20 @@
+OOP Consist of Four pillars:
+1) Inheritance
+2) Abstraction
+3) Polymorphism
+4) Encapsulation
+
+1) Inheritance:
+
+Inheritance is basically a relationship between class we can access parent class in child through extend keyword and we can access all the properties of parent class. By default the class is final to access the parent class in child class we make static the static does without creating object of the class we can access directly the class. and in kotlin we can access the final class with open keywor before class keyword and inheritance : keyword.
+
+2) Abstraction:
+
+Abstraction is consist of two types the first is abstract class and second is interface:
+
+interface:
+In interface we define the structure like we declare the methods and properties like this in kotlin 
+val name : "new", fun sum(val name : Int,val name1 : Int) we can not create the body of that function just declare.
+
+Abstract Class:
+the Abstract class is similar to interface but in abstract we can also define the body of the methods and the properties like we can declare the body of the methods with abstract keyword and the fields to do this we insert abstract keyword before class and we can define it.

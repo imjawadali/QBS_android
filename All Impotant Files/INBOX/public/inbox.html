@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="/public/assets/css/inbox.css">
+    <link rel="icon" href="img/nom-icon.png" type="image/png">
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/5942064cc7.js" crossorigin="anonymous"></script>
+    <!--<title>Dashboard Sidebar Menu</title>-->
+    <title>NOMAD</title>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+
+
+                <span class="image" id="smlogo">
+                    <img src="img/output-onlinegiftools(1).gif" width="70px" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <img src="img/nom1.png" width="170" id="ascend_logo">
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle' onclick="change_logo()"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/Dashboard">
+                            <i class='bx bx-briefcase icon'></i>
+                            <span class="text nav-text">My Tasks</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/Inbox">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Inbox</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/Resume">
+                            <i class='bx bx-id-card icon'></i>
+                            <span class="text nav-text">My Profile</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/FAQS">
+                            <i class='bx bx-comment icon'></i>
+                            <span class="text nav-text">FAQs</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/Settings">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="text nav-text">Settings</span>
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li> -->
+
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <!-- <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li> -->
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="text">
+            <div class="text">
+                <h5>Help Center</h5>
+            </div>
+            <!-- ----------------------------------------- MAIN TOP RIGHT WIDGETS CONTAINER START ----------------------------------------- -->
+            <div class="text">
+
+                <div class="searchbarcontainer">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search">
+                </div>
+
+
+                <div class="notification_container">
+                    <img src="img/bell.svg">
+                </div>
+                <div class="user_image_container">
+                    <img src="img/5.png">
+                </div>
+
+
+
+
+                <!-- <div class="user_name_container" style="border-radius: 5%; padding: 10px; display: flex;">
+                
+                
+                <h7 style="font-size: 16px; font-weight: 300;">Shuaib Yasin</h7>
+                <i class='fas fa-angle-down icon' style="font-size: 15px; padding: 5px; color: grey;padding-top: 5px; cursor: pointer;" onclick="menuToggle()"></i>
+             
+             
+                <div class="user_profile_menu">
+                    <div class="diamond"></div>
+                    <ul>
+                      <li>
+                        <i class="bx bx-log-out icon"><a href="/Login">Logout</a></i>
+                      </li>
+                    </ul>
+                </div>
+
+
+            </div> -->
+
+
+
+
+
+
+
+
+                <div class="action">
+                    <h7 class="username">Shuaib Yasin</h7>
+                    <div class="profile">
+                        <i class='fas fa-angle-down' onclick="menuToggle()"></i>
+                    </div>
+                    <div class="menu1">
+                        <!-- <h3>CONTROL PANEL</h3> -->
+                        <!-- <br /><span>Website Designer</span> -->
+                        <!-- <hr> -->
+                        <ul>
+                            <!-- <li>
+                                <i class="fa fa-envelope" aria-hidden="true"><a href="/Inbox">&nbsp; Inbox</a></i>
+                            </li> -->
+                            <li>
+                                <i class="fa fa-question-circle" aria-hidden="true"><a href="/Help"> &nbsp;Help</a></i>
+                            </li>
+                            <!-- <li>
+                                <i class="fa fa-user" aria-hidden="true"> <a href="/MyProfile"> &nbsp; My profile</a></i>
+                            </li> -->
+                            <li>
+                                <i class="bx bx-lock icon" aria-hidden="true"><a href="/Settings">&nbsp;
+                                        Settings</a></i>
+                            </li>
+                            <li>
+                                <i class="bx bx-log-out icon"><a href="/Login">&nbsp; Logout</a></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+            <!-- ----------------------------------------- MAIN TOP RIGHT WIDGETS CONTAINER END ----------------------------------------- -->
+            
+        
+        
+        
+        <!-- ----------------------------------------- MAIN BODY START (BETA)----------------------------------------- -->
+
+        
+
+        <div class="main_div">
+
+            <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'Inbox')"><i class="fas fa-inbox"></i>&nbsp;Inbox</button>
+          <button class="tablinks" onclick="openCity(event, 'Drafts')"><i class="fab fa-firstdraft"></i>&nbsp;Drafts</button>
+          <button class="tablinks" onclick="openCity(event, 'Sent_Items')"><i class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;Sent Items</button>
+          <button class="tablinks" onclick="openCity(event, 'Deleted_Items')"><i class="fa fa-trash-o"></i>&nbsp;Deleted Items</button>
+        </div>
+        
+        <div class="main_tabcontent">
+        
+        <div id="Inbox" class="tabcontent">
+            <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                <h3 style="width: 25%;">Inbox</h3>
+                <div class="form"  style="width: 75%;">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="form-control form-input" placeholder="Search Mailbox    ">
+                </div>
+            </div>
+        
+              <div class="inner_mail_box">
+        
+                  <div class="mail_side_box">
+                    <div class="inbox">
+                        <div class="inbox_heading">Ascend Consulting</div>
+                        <div class="inbox_subject">Subject Line</div>
+                        <div class="inbox_name">Hello S.amin</div>
+                    </div>
+                  </div>
+
+
+                  <div class="main_mail_box">
+                    <div class="porfile">
+                        <img src="img/profile-icon-9.png" alt="">
+                        <div>
+                            <div class="date">Sat 25/12/2022 3:40pm</div>
+                            <div class="name">Ascend Consulting</div>
+                            <div class="subject">Behavioral Questionnaire is live</div>
+                        </div>
+                    </div>
+                    <div class="other_info">
+                        <div>To : S.amin</div>
+                        <div>CC : Ascend Consulting</div>
+                    </div>
+                    <div class="subject_info">
+                    </div>
+                  </div>
+
+
+
+              </div>
+        
+        </div>
+        
+        <div id="Drafts" class="tabcontent">
+            <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+            <h3 style="width: 25%;">Drafts</h3>
+            <div class="form" style="width: 75%;">
+                <i class="fa fa-search"></i>
+                <input type="text" class="form-control form-input" placeholder="Search Mailbox    ">
+            </div>
+        </div>
+        
+          <div class="inner_mail_box">
+        
+              <div class="mail_side_box">
+                <div class="inbox">
+                    <div class="inbox_heading">Ascend Consulting</div>
+                    <div class="inbox_subject">Subject Line</div>
+                    <div class="inbox_name">Hello S.amin</div>
+                </div>
+              </div>
+              <div class="main_mail_box">
+                <div class="porfile">
+                    <img src="img/profile-icon-9.png" alt="">
+                    <div>
+                        <div class="date">Sat 25/12/2022 3:40pm</div>
+                        <div class="name">Ascend Consulting</div>
+                        <div class="subject">Behavioral Questionnaire is live</div>
+                    </div>
+                </div>
+                <div class="other_info">
+                    <div>To : S.amin</div>
+                    <div>CC : Ascend Consulting</div>
+                </div>
+        
+                <div class="subject_info">
+        
+                </div>
+        
+              </div>
+          </div>
+        </div>
+        
+        <div id="Sent_Items" class="tabcontent">
+          <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+            <h3 style="width: 25%;">Sent Items</h3>
+            <div class="form" style="width: 75%;">
+                <i class="fa fa-search"></i>
+                <input type="text" class="form-control form-input" placeholder="Search Mailbox    ">
+            </div>
+        </div>
+        
+          <div class="inner_mail_box">
+        
+              <div class="mail_side_box">
+                <div class="inbox">
+                    <div class="inbox_heading">Ascend Consulting</div>
+                    <div class="inbox_subject">Subject Line</div>
+                    <div class="inbox_name">Hello S.amin</div>
+                </div>
+              </div>
+              <div class="main_mail_box">
+                <div class="porfile">
+                    <img src="img/profile-icon-9.png" alt="">
+                    <div>
+                        <div class="date">Sat 25/12/2022 3:40pm</div>
+                        <div class="name">Ascend Consulting</div>
+                        <div class="subject">Behavioral Questionnaire is live</div>
+                    </div>
+                </div>
+                <div class="other_info">
+                    <div>To : S.amin</div>
+                    <div>CC : Ascend Consulting</div>
+                </div>
+        
+                <div class="subject_info">
+        
+                </div>
+        
+              </div>
+          </div>
+        </div>
+        
+        <div id="Deleted_Items" class="tabcontent">
+            <div style="width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                <h3 style="width: 25%;">Deleted Items</h3>
+                <div class="form" style="width: 75%;">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="form-control form-input" placeholder="Search Mailbox    ">
+                </div>
+            </div>
+              <div class="inner_mail_box">
+                  <div class="mail_side_box">
+                    <div class="inbox">
+                        <div class="inbox_heading">Ascend Consulting</div>
+                        <div class="inbox_subject">Subject Line</div>
+                        <div class="inbox_name">Hello S.amin</div>
+                    </div>
+                  </div>
+                  <div class="main_mail_box">
+                    <div class="porfile">
+                        <img src="img/profile-icon-9.png" alt="">
+                        <div>
+                            <div class="date">Sat 25/12/2022 3:40pm</div>
+                            <div class="name">Ascend Consulting</div>
+                            <div class="subject">Behavioral Questionnaire is live</div>
+                        </div>
+                    </div>
+                    <div class="other_info">
+                        <div>To : S.amin</div>
+                        <div>CC : Ascend Consulting</div>
+                    </div>
+                    <div class="subject_info">
+                    </div>
+                  </div>
+              </div>
+        </div>
+        </div>
+        
+        
+        </div>
+        <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+
+
+
+                <!-- ----------------------------------------- MAIN BODY END (BETA)----------------------------------------- -->
+                
+                
+                
+                
+                <!-- ----------------------------------------- FOOTER START (BETA)----------------------------------------- -->
+
+
+
+                <div class="footer">
+                    <div>
+                        <h6>©Powered By Ascend People Consulting</h6>
+                        <h6><a href="/Terms-And-Conditions" style="color: black;">Terms & Conditions</a></h6>
+                        <h6><a href="/PrivacyPolicy" style="color: black;">Privacy policy</a></h6> 
+                    </div>
+                </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- --------------------------------------------SCRIPT START FROM HERE-------------------------------------------- -->
+
+
+    <script>
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle"),
+            modeText = body.querySelector(".mode-text");
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+    </script>
+    <script>
+        function change_logo() {
+            small_logo = document.getElementById("smlogo");
+            const display = window.getComputedStyle(small_logo).display;
+            if (display === 'flex') {
+                document.getElementById("smlogo").style.display = "none";
+                console.log("yes");
+            }
+            else {
+                console.log("inside none");
+                document.getElementById("smlogo").style.display = "flex";
+            }
+        }
+    </script>
+    <script>
+        function menuToggle() {
+            console.log("I'm in.....!");
+            const toggleMenu = document.querySelector(".menu1");
+            toggleMenu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

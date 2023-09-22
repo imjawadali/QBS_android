@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".Screens.POSTAUDITSCREEN">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="110dp">
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/mainlogo"/>
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/qbslogo"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="150px">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/leftlogo"
+            android:onClick="skipbarcode"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:id="@+id/go_to_home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#258B6A"
+            android:onClick="gotodashboard"
+            app:srcCompat="@drawable/baseline_home_24"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:backgroundTint="#299271"
+            android:layout_height="65dp"
+            android:text="POST AUDIT RESULTS"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="showpopup"
+            android:layout_marginTop="20dp"
+            android:id="@+id/gotodashboard"
+            android:textSize="20sp"
+            app:cornerRadius="10dp">
+        </com.google.android.material.button.MaterialButton>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:backgroundTint="#00BCD5"
+            android:layout_height="65dp"
+            android:text="RETACK STOCK"
+            android:layout_marginLeft="25dp"
+            android:onClick="gotoback"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/gotodashboard2"
+            android:textSize="20sp"
+            app:cornerRadius="10dp">
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

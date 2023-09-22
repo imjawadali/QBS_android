@@ -1,0 +1,56 @@
+body{
+    background-color: #f8f9ff;
+}
+.sendbtn{
+    /* padding-left: 100px;  */
+    background-color: #03A17D;
+    /* padding-right: 100px; */
+    border-color:  white;
+    width: 250px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.sendbtn:hover{
+    background-color: #015c47;
+}
+.heading{
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #03A17D;
+    margin-bottom: 50px;
+}
+h3{
+    font-weight: bolder;
+}
+.maindiv{
+    margin-left: 30px;
+    height: 89vh;
+    width: 96vw;
+    background-color: white;
+
+}
+@media only screen and (min-width: 60px) {
+    .sendbtn{
+        width: auto;
+        display:block;
+    }
+      } 
+@media only screen and (min-width: 768px) {
+    .sendbtn{
+        width: 100px;
+        display:block;
+    }
+      } 
+
+  @media only screen and (min-width: 992px) {
+    .sendbtn{
+        width: 200px;
+        display:block;
+    } 
+  }
+  @media only screen and (min-width: 1200px) {
+    .sendbtn{
+        width: 250px;
+        display:block;
+    }
+  }

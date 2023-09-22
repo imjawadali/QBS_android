@@ -1,0 +1,184 @@
+package com.example.shakerapplication.Screens;
+
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.shakerapplication.Adapters.Scan_Transfer_Screen_Adapter;
+import com.example.shakerapplication.ModelClasses.LoadSerialHistory;
+import com.example.shakerapplication.R;
+import com.example.shakerapplication.SSLConfiguration.OkHttpUtils;
+import com.example.shakerapplication.Services.Routes;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.snackbar.Snackbar;
+
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+
+public class ScanTransferScreen extends AppCompatActivity {
+    TextView serialno;
+    ProgressDialog progressDialog;
+    Scan_Transfer_Screen_Adapter scan_transfer_screen_adapter;
+    RecyclerView transferrecycle;
+    CardView transferadddToList;
+    EditText transferserialno;
+
+    private String brand,
+            category,
+            modelno,
+            group,
+            receivedate,
+            sizedimen,
+            customer,
+            lastplant,
+            laststloc,
+            currentplant,
+            currentstloc,
+            modeldescription;
+
+
+    private int object_counter=0;
+    private int counter=0;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_scan_transfer_screen);
+        getSupportActionBar().hide();
+        progressDialog = new ProgressDialog(ScanTransferScreen.this);
+        progressDialog.setTitle("Wait");
+        progressDialog.setMessage("Adding Item in the List");
+        progressDialog.setCancelable(false);
+
+        initialization();
+        transferadddToList = findViewById(R.id.transferadddToList);
+        transferserialno = findViewById(R.id.transferserialno);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false);
+        transferrecycle.setLayoutManager(linearLayoutManager);
+        scan_transfer_screen_adapter = new Scan_Transfer_Screen_Adapter(getApplicationContext());
+        transferrecycle.setAdapter(scan_transfer_screen_adapter);
+
+        try {
+            transferadddToList.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (!transferserialno.getText().toString().equals("")){
+                        progressDialog.show();
+                        load_serial_history(transferserialno.getText().toString());
+                        ++counter;
+                    }
+                    else {
+                        Snackbar snackbar = Snackbar.make(v,"Please enter serial no",Snackbar.LENGTH_LONG);
+                        snackbar.show();
+                    }
+                }
+            });
+        }
+        catch (Exception e){
+
+        }
+    }
+    private void initialization() {
+        transferrecycle = findViewById(R.id.transferrecycle);
+    }
+
+    public void skiptransfer(View view) {
+        onBackPressed();
+    }
+
+    public void gotodeliveryscreen(View view) {
+        startActivity(new Intent(getApplicationContext(),TransferLocationScreen.class));
+    }
+
+    public void cancel(View view) {
+        onBackPressed();
+    }
+
+
+    private void load_serial_history(String scanned_serial_no){
+        Retrofit retrofit = OkHttpUtils.createRetrofit(
+                this,  // context of your Android app
+                "https://bar.shaker.com.sa/",  // base URL of API
+                "bilal.pfx",  // filename of the certificate in the assets folder
+                "123123123"  // password for the certificate
+        );
+
+        Routes routes = retrofit.create(Routes.class);
+        Call<List<LoadSerialHistory>> call = routes.getSerialHistoryData(scanned_serial_no,"");
+        call.enqueue(new Callback<List<LoadSerialHistory>>() {
+
+            @Override
+            public void onResponse(Call<List<LoadSerialHistory>> call, Response<List<LoadSerialHistory>> response) {
+
+                if (response.isSuccessful()) {
+                    List<LoadSerialHistory> data = response.body();
+                    LoadSerialHistory object;
+                    System.out.println("The size is: " + data.size());
+                    for (int i = 0; i < data.size(); i++) {
+                        object = data.get(i);
+                        brand = object.getBrand();
+                        category = object.getCategory();
+                        modelno = object.getModel();
+                        group = object.getGroup();
+                        receivedate = object.getReceiveDate();
+                        sizedimen = object.getSizeDimension();
+                        customer = object.getCustomer();
+                        lastplant = object.getLastPlant();
+                        laststloc = object.getLastStockLocation();
+                        currentplant = object.getCurrentPlant();
+                        currentstloc = object.getCurrentStockLocation();
+                        modeldescription = object.getModelDescription();
+                        System.out.println("The data coming in transfer posting is:  " + modeldescription + " " + currentplant + " " + currentstloc);
+                    }
+                    progressDialog.dismiss();
+                    if(data.size() == 0){
+                        // AlertDialod Code
+                        AlertDialog.Builder alertDialog = new AlertDialog.Builder(ScanTransferScreen.this);
+                        View view1 = getLayoutInflater().inflate(R.layout.popupmessage, null);
+                        alertDialog.setView(view1);
+                        alertDialog.setCancelable(true);
+                        AlertDialog dialog = alertDialog.create();
+                        TextView tv = view1.findViewById(R.id.grn_doc_num);
+                        tv.setText("No Such Serial Number Exists");
+                        MaterialButton btn = view1.findViewById(R.id.gotodashboard);
+                        btn.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                startActivity(new Intent(getApplicationContext(), DashboardScreen.class));
+                            }
+                        });
+                        dialog.show();
+                        --counter;
+                    }
+                    else{
+                        scan_transfer_screen_adapter.addItem(Integer.toString(counter),transferserialno.getText().toString(),currentstloc, currentplant, modeldescription);
+                        ++object_counter;
+                    }
+
+                    transferserialno.setText("");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<LoadSerialHistory>> call, Throwable t) {
+                System.out.println("An error occured in transfer posting! "+t.getMessage());
+            }
+        });
+    }
+
+
+
+
+}

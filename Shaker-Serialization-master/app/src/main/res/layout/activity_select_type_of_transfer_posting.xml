@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.Select_Type_Of_Transfer_Posting"
+    android:background="@drawable/backgroundimage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="110dp">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/mainlogo"/>
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/qbslogo"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="150px">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/leftlogo"
+                    android:onClick="skipbarcode"
+                    android:layout_height="40dp"/>
+                <ImageView
+                    android:id="@+id/go_to_home"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#258B6A"
+                    android:onClick="gotodashboard"
+                    app:srcCompat="@drawable/baseline_home_24"/>
+            </RelativeLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:backgroundTint="#299271"
+                android:layout_height="60dp"
+                android:text="Move Stock SLOC to SLOC"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:onClick="move_stock_sloc_to_sloc"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="100dp"
+                app:cornerRadius="10dp">
+
+            </com.google.android.material.button.MaterialButton> <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:backgroundTint="#299271"
+                android:layout_height="60dp"
+                android:text="Move Stock PLANT to PLANT"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:onClick="move_stock_plant_to_plant"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="50dp"
+                app:cornerRadius="10dp">
+
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

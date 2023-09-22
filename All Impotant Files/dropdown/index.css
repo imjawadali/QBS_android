@@ -1,0 +1,39 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+.maincontainer{
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: teal;
+}
+#btn{
+  height: 5vh;
+  width: 10vw;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 15px;
+}
+#btn1{
+  height: 5vh;
+  width: 10vw;
+  border: none;
+  margin-left: 10px;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.buttondiv{
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
